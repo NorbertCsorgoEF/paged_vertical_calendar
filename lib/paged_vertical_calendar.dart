@@ -360,6 +360,7 @@ class _MonthView extends StatelessWidget {
         GridView.builder(
           addRepaintBoundaries: false,
           physics: NeverScrollableScrollPhysics(),
+          clipBehavior: Clip.none,
           shrinkWrap: true,
           padding: EdgeInsets.zero,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
